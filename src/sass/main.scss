@@ -1,0 +1,180 @@
+// 1. Your custom variables and variable overwrites.
+$blue: #476DAEFF;
+$red: #93032EFF;
+$orange: #FF6542FF;
+$white: #F8F1EFFF;
+$black: #171A21FF;
+$success: #09BC8AFF;
+$dark: #2C2B26FF;
+$border: #74746d71;
+$muted: #74746d32;
+
+$global-color: $dark;
+$global-inverse-color: $white;
+$global-primary-background: $blue;
+$global-success-background: $success;
+$global-warning-background: $orange;
+$global-danger-background: $red;
+$global-muted-color: $muted;
+$global-background: #f9f9f9;
+$global-secondary-background: $dark;
+$global-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+$global-font-size: 16px;
+$global-link-color: $blue;
+$global-link-hover-color: $red;
+$global-border: $border;
+$offcanvas-bar-background: $black;
+$base-heading-font-weight: 600;
+
+
+// 2. Import default variables and available mixins.
+@import "../../node_modules/uikit/src/scss/variables-theme.scss";
+@import "../../node_modules/uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+// Card
+@mixin hook-card() {
+    border-radius: 18px;
+}
+// Tile
+@mixin hook-tile() {
+    border-radius: 18px;
+}
+// Button
+@mixin hook-button() {
+    border-radius: 8px;
+}
+
+// 4. Import UIkit.
+@import "../../node_modules/uikit/src/scss/uikit-theme.scss";
+
+:focus {
+    outline: none;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) img {
+    filter: brightness(.8) contrast(1.2);
+}
+
+.uk-navbar-nav > li > a{
+    color: $blue;
+}
+
+.uk-offcanvas-bar {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.uk-card {
+    .uk-card-header {
+        border-bottom: 1px solid $global-border;
+    }
+    .uk-card-footer {
+        border-top: 1px solid $global-border;
+    }
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+strong {
+    color: $orange;
+}
+
+footer {
+    background-color: $black;
+    border-top: solid $red 8px;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+}
+
+body.dark-mode {
+    background-color: $dark !important;
+    color: $white !important;
+    .uk-card, .uk-card-default, .uk-tile, .uk-tile-default {
+        background-color: $dark !important;
+        color: $white !important;
+    }
+    .uk-navbar-container:not(.uk-navbar-transparent) img {
+        filter: none;
+    }
+    *:not(strong, .uk-offcanvas-bar .uk-nav-primary > li > a) {
+        color: $white !important;
+    }
+    h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6,
+    .uk-heading-small, .uk-heading-medium, .uk-heading-large, .uk-heading-xlarge,
+    .uk-heading-2xlarge, .uk-card-title, .uk-accordion-title, .uk-text-lead {
+        color: $white !important;
+
+    }
+    .uk-navbar-container:not(.uk-navbar-transparent) {
+        background-color: $black;
+        color: $white !important;
+    }
+    #dark-light-mode {
+        background: url('../images/dark_mode.svg') no-repeat 0% 0/cover;
+    }
+    .uk-container {
+        :not(.uk-card, .uk-tile, .uk-offcanvas-overlay, #footer-border) > div  {
+            background-color: $dark !important;
+        }
+    }
+    footer {
+        border-top: solid $blue 8px;
+    }
+}
+
+#dark-light-mode {
+    background: url('../images/dark_mode.svg') no-repeat 100% 0/cover;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+
+#footer-border {
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+#footer-border {
+    background: url('../images/rocket_bg.svg') repeat-y center / contain;
+    height: 198px;
+    width: 159px;
+    margin: 0 auto;
+}
+
+#footer-border:hover {
+    animation: wiggle 0.1s infinite, rocketBg 5s linear infinite;
+    cursor: pointer;
+}
+
+span[uk-icon='icon: receiver;'] {
+    transform: rotate(90deg);
+    transition: transform .7s ease-in-out;
+}
+
+span[uk-icon='icon: receiver;']:hover {
+    transform: rotate(0deg);
+}
+
+@keyframes rocketBg {
+    from {
+      background-position: center -400px;
+    }
+    to {
+      background-position: center 400px;
+    }
+}
+@keyframes wiggle {
+    from {
+      transform: translateX(1px);
+    }
+    to {
+      transform: translateX(-1px);
+    }
+}

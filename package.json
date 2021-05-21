@@ -1,0 +1,24 @@
+{
+  "name": "is-framework-php",
+  "version": "0.0.1",
+  "description": "Simple PHP framework with routing and Sass compiler.",
+  "private": true,
+  "devDependencies": {
+    "sass": "^1.32.13",
+    "uikit": "^3.6.22",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "scripts": {
+    "sass": "./node_modules/.bin/sass ./src/sass/main.scss ./src/html/static/css/styles.css",
+    "webpack": "npx webpack",
+    "compile": "npx webpack && npm run sass",
+    "build": "rm -rf ./dist && npx webpack && npm run sass && cp -r ./src/html/ ./dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iservicesinc/is-framework-php/"
+  },
+  "author": "@iservicesinc",
+  "license": "ISC"
+}

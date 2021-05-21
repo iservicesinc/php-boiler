@@ -1,0 +1,7 @@
+# Node
+node_modules
+
+# Compiled code
+dist
+src/html/static/css/styles.*
+src/html/static/js/bundle.*
