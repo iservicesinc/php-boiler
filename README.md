@@ -16,6 +16,44 @@ A very simple PHP framework to create web applications with routing and a Sass c
 * Docker (required for local development server)
 * Node (required for Webpack and Sass compiler)
 
+## Structure
+
+* .
+* .docker
+* node_modules
+* src
+  * html
+    * components
+    * icons
+    * pages
+    * static
+    * .htaccess
+    * browserconfig.xml
+    * favicon.ico
+    * index.php
+    * router.php
+    * site.webmanifest
+  * sass
+    * main.scss
+  * app.js
+* .gitignore
+* docker-compose.yml
+* Dockerfile
+* package.json
+* README.md
+* webpack.config.js
+
+Starting from the top, the `.docker` directory stores our virtual host file for our docker instance, this should not require any modifications but, can be extended and modified to fit your project. The `node_models` directory is where NPM stores our dev dependencies such as webpack and sass.
+
+The `src` folder is where all the magic happens! Create components to include/require throughout your project in the `src/html/components` directory, place your sites icons in the `src/html/icons` directory, add pages in the `src/html/pages` directory, store images in the `src/html/static/images` directory, customize your styles in `src/sass/main.scss`, and add any necessary javascript functions in `src/app.js`.
+
+The included `.htaccess` file will handle url rewrites for pretty uri's. Modify `browserconfig.xml`, `favicon.ico`, and `site.webmanifest` as needed (or remove from project if not needed). The `.gitignore` file simply saves us from commiting unnecessary files to our repo.
+
+The `docker-compose.yml` and `Dockerfile` orchestrate our local development containers, these can be modified as needed. `package.json` is our dependency manager and allows us to install required packages using NPM or Yarn.
+
+And finally, `webpack.config.js` is our configuration file that helps us compile and build our projects css and javascript, this can also be customized and extended to your hearts content.
+
+
 ## Issues
 
 Please report any bugs or issues at https://github.com/iservicesinc/is-framework-php/issues.

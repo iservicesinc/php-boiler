@@ -1,12 +1,12 @@
-darkModeInit = () => {
+function darkModeInit() {
     if (localStorage.getItem('isDarkMode')) {
       body = document.getElementById("main");
       body.classList.add("dark-mode");
       body.classList.add("uk-light");
-    }
-}
+    };
+};
 
-darkModeToggle = () => {
+function darkModeToggle() {
     if (!window.localStorage.getItem('isDarkMode')) {
         window.localStorage.setItem('isDarkMode', 'true');
         document.body.classList.add("dark-mode");
@@ -15,5 +15,7 @@ darkModeToggle = () => {
         window.localStorage.removeItem('isDarkMode');
         document.body.classList.remove("dark-mode");
         document.body.classList.remove("uk-light");
-    }
-}
+    };
+};
+
+darkModeInit();

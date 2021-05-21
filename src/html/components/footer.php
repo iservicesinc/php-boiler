@@ -20,5 +20,4 @@
 </body>
 <script src="/static/js/bundle.js"></script>
 <script src="/static/js/darkMode.js"></script>
-<script>darkModeInit();</script>
 </html>

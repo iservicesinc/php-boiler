@@ -19,26 +19,13 @@ $description = "A simple PHP framework with routing and Sass compiler using NPM 
 $keywords = "iservices, php, framework, routing, sass, npm, docker";
 $author = "@iservicesinc";
 
+require_once(BASE_DIR.'/router.php');
 
-$request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
-switch ($request_uri[0]) {
-    // Home page
-    case '/':
-        $page = './pages/home.php';
-        $title = "I Services, Inc.";
-        break;
-    // Everything else
-    default:
-        header('HTTP/1.0 404 Not Found');
-        $page = './pages/404.php';
-        break;
-}
-
-include('./components/header.php');
+include(BASE_DIR.'/components/header.php');
 ?>
 <main class="uk-container uk-padding uk-margin">
 <?php require $page; ?>
 </main>
 <?php
-include('./components/footer.php');
+include(BASE_DIR.'/components/footer.php');
 ?>
