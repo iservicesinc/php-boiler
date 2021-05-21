@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://iservicesinc.net">
-    <img alt="I Services" src="./src/public/static/images/logo.svg" height="42" />
+    <img alt="I Services" src="./src/html/static/images/logo.svg" height="42" />
   </a>
 </p>
 <h1 align="center">
