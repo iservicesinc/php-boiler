@@ -33,6 +33,8 @@ A very simple PHP framework to create web applications with routing and a Sass c
     * index.php
     * router.php
     * site.webmanifest
+  * js
+    * darkMode.js
   * sass
     * main.scss
   * app.js
@@ -45,7 +47,7 @@ A very simple PHP framework to create web applications with routing and a Sass c
 
 Starting from the top, the `.docker` directory stores our virtual host file for our docker instance, this should not require any modifications but, can be extended and modified to fit your project. The `node_models` directory is where NPM stores our dev dependencies such as webpack and sass.
 
-The `src` folder is where all the magic happens! Create components to include/require throughout your project in the `src/html/components` directory, place your sites icons in the `src/html/icons` directory, add pages in the `src/html/pages` directory, store images in the `src/html/static/images` directory, customize your styles in `src/sass/main.scss`, and add any necessary javascript functions in `src/app.js`.
+The `src` folder is where all the magic happens! Create components to include/require throughout your project in the `src/html/components` directory, place your sites icons in the `src/html/icons` directory, add pages in the `src/html/pages` directory, store images in the `src/html/static/images` directory. Add custom js files in `src/app.js`, and customize your styles in `src/sass/main.scss`.
 
 The included `.htaccess` file will handle url rewrites for pretty uri's. Modify `browserconfig.xml`, `favicon.ico`, and `site.webmanifest` as needed (or remove from project if not needed). The `.gitignore` file simply saves us from commiting unnecessary files to our repo.
 

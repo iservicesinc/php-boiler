@@ -19,5 +19,5 @@
     </footer>
 </body>
 <script src="/static/js/bundle.js"></script>
-<script src="/static/js/darkMode.js"></script>
+<script>window.dmInit();</script>
 </html>

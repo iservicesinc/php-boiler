@@ -19,6 +19,6 @@
                     <li><a href="/" class="uk-navbar-item"><img src="/static/images/logo.svg" alt="I Services Logo" width="280" /></a></li>
                 </ul>
             </div>
-            <a id="dark-light-mode" onClick="darkModeToggle()" class="uk-position-top-right" uk-scrollspy="cls:uk-animation-fade;delay:200;" aria-label="Dark mode"></a>
+            <a id="dark-light-mode" onClick="window.dmToggle()" class="uk-position-top-right" uk-scrollspy="cls:uk-animation-fade;delay:200;" aria-label="Dark mode"></a>
         </nav>
     </header>

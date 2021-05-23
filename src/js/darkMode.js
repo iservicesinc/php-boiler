@@ -18,4 +18,5 @@ function darkModeToggle() {
     };
 };
 
-darkModeInit();
+window.dmInit = darkModeInit;
+window.dmToggle = darkModeToggle;
