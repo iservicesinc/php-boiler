@@ -3,7 +3,7 @@
         <img src="/images/build.svg" alt="Genius" />
     </div>
     <div class="uk-flex uk-flex-column uk-flex-center uk-flex-first@m" uk-scrollspy="cls:uk-animation-slide-left;delay:100;repeat:true;">
-        <h2 class="uk-heading-small">I Services <strong>PHP/Webpack</strong> boiler</h2>
+        <h2 class="uk-heading-small">I Services <strong>PHP/Webpack</strong> Boiler</h2>
         <p class="uk-text-lead">Webpack, Sass, and routing.<br/>UIKit included for UX.</p>
     </div>
 </div>

@@ -4,12 +4,12 @@
   </a>
 </p>
 <h1 align="center">
-  I Services Simple PHP Framework
+  I Services PHP/Webpack Boiler
 </h1>
 
 ## Description
 
-A very simple PHP framework to create web applications with routing and a Sass compiler. Extend applications with NPM package manager and Webpack. Default packages include `sass`, `uikit`, and `webpack`.
+A very simple PHP/Webpack boilerplate to create web applications with routing and a Sass compiler. Default node packages include `sass`, `uikit`, and `webpack`. Easily add aditional modules, or extend your application by <a href="https://getcomposer.org/doc/01-basic-usage.md#autoloading" rel="nofollow norefferer noopener" target="_blank">integrating composer</a>.
 
 ## Requirements
 
@@ -23,16 +23,17 @@ A very simple PHP framework to create web applications with routing and a Sass c
 * node_modules
 * src
   * html
-    * components
-    * icons
-    * pages
-    * static
-    * .htaccess
-    * browserconfig.xml
-    * favicon.ico
-    * index.php
-    * router.php
-    * site.webmanifest
+    * public
+      * components
+      * icons
+      * pages
+      * static
+      * .htaccess
+      * browserconfig.xml
+      * favicon.ico
+      * index.php
+      * router.php
+      * site.webmanifest
   * js
     * darkMode.js
   * sass
@@ -47,11 +48,11 @@ A very simple PHP framework to create web applications with routing and a Sass c
 
 Starting from the top, the `.docker` directory stores our virtual host file for our docker instance, this should not require any modifications but, can be extended and modified to fit your project. The `node_models` directory is where NPM stores our dev dependencies such as webpack and sass.
 
-The `src` folder is where all the magic happens! Create components to include/require throughout your project in the `src/html/components` directory, place your sites icons in the `src/html/icons` directory, add pages in the `src/html/pages` directory, store images in the `src/html/static/images` directory. Add custom js files in `src/app.js`, and customize your styles in `src/sass/main.scss`.
+The `src` folder is where all the magic happens! Create components to include/require throughout your project in the `src/html/public/components` directory, place your sites icons in the `src/html/public/icons` directory, add pages in the `src/html/public/pages` directory, store images in the `src/html/public/static/images` directory. Add custom js files in `src/js` and require them in `src/app.js`, and customize your styles in `src/sass/main.scss`.
 
 The included `.htaccess` file will handle url rewrites for pretty uri's. Modify `browserconfig.xml`, `favicon.ico`, and `site.webmanifest` as needed (or remove from project if not needed). The `.gitignore` file simply saves us from commiting unnecessary files to our repo.
 
-The `docker-compose.yml` and `Dockerfile` orchestrate our local development containers, these can be modified as needed. `package.json` is our dependency manager and allows us to install required packages using NPM or Yarn.
+The `docker-compose.yml` and `Dockerfile` orchestrate our local development containers, these can be modified as needed. `package.json` is our dependency manager and allows us to install required packages using NPM or Yarn. Optionally, 
 
 And finally, `webpack.config.js` is our configuration file that helps us compile and build our projects css and javascript, this can also be customized and extended to your hearts content.
 
