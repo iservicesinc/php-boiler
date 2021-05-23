@@ -85,7 +85,7 @@ Please report any bugs or issues at https://github.com/iservicesinc/is-framework
     Start up local development environment in docker.
 
     ```shell
-    docker-compose up --build
+    npm run server
     ```
 
 1.  **Open the source code and start editing!**
