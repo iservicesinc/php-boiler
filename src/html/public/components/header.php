@@ -9,14 +9,14 @@
     <meta name="keywords" content="<?php echo $keywords; ?>">
     <meta name="author" content="<?php echo $author; ?>">
     <?php include_once(BASE_DIR.'/icons/favicons.html'); ?>
-    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/css/bundle.css">
 </head>
 <body id="main" class="no-js">
     <header>
         <nav class="uk-navbar-container uk-box-shadow-small" uk-navbar="mode: click">
             <div class="uk-navbar-left" uk-scrollspy="cls:uk-animation-fade;delay:500;">
                 <ul class="uk-navbar-nav">
-                    <li><a href="/" class="uk-navbar-item"><img src="/static/images/logo.svg" alt="I Services Logo" width="280" /></a></li>
+                    <li><a href="/" class="uk-navbar-item"><img src="/images/logo.svg" alt="I Services Logo" width="280" /></a></li>
                 </ul>
             </div>
             <a id="dark-light-mode" onClick="window.dmToggle()" class="uk-position-top-right" uk-scrollspy="cls:uk-animation-fade;delay:200;" aria-label="Dark mode"></a>

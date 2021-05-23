@@ -1,6 +1,6 @@
 <div class="uk-flex uk-child-width-1-2@m" uk-grid>
     <div uk-scrollspy="cls:uk-animation-slide-right;delay:300;repeat:true;">
-        <img src="/static/images/build.svg" alt="Genius" />
+        <img src="/images/build.svg" alt="Genius" />
     </div>
     <div class="uk-flex uk-flex-column uk-flex-center uk-flex-first@m" uk-scrollspy="cls:uk-animation-slide-left;delay:100;repeat:true;">
         <h2 class="uk-heading-small">I Services <strong>PHP/Webpack</strong> boiler</h2>
@@ -25,16 +25,19 @@
                     <ul>
                         <li>html
                             <ul>
-                                <li>components</li>
-                                <li>icons</li>
-                                <li>pages</li>
-                                <li>static</li>
-                                <li>.htaccess</li>
-                                <li>browserconfig.xml</li>
-                                <li>favicon.ico</li>
-                                <li>index.php</li>
-                                <li>router.php</li>
-                                <li>site.webmanifest</li>
+                                <li>public
+                                    <ul>
+                                        <li>components</li>
+                                        <li>icons</li>
+                                        <li>pages</li>
+                                        <li>.htaccess</li>
+                                        <li>browserconfig.xml</li>
+                                        <li>favicon.ico</li>
+                                        <li>index.php</li>
+                                        <li>router.php</li>
+                                        <li>site.webmanifest</li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li>js
@@ -60,7 +63,7 @@
         </code>
     </div>
     <p>Starting from the top, the <code>.docker</code> directory stores our virtual host file for our docker instance, this should not require any modifications but, can be extended and modified to fit your project. The <code>node_models</code> directory is where NPM stores our dev dependencies such as webpack and sass.</p>
-    <p>The <code>src</code> folder is where all the magic happens! Create components to include/require throughout your project in the <code>src/html/components</code> directory, place your sites icons in the <code>src/html/icons</code> directory, add pages in the <code>src/html/pages</code> directory, store images in the <code>src/html/static/images</code> directory. Add custom js files in <code>src/js</code> and require them in <code>src/app.js</code>, and customize your styles in <code>src/sass/main.scss</code>.</p>
+    <p>The <code>src</code> folder is where all the magic happens! Create components to include/require throughout your project in the <code>src/html/public/components</code> directory, place your sites icons in the <code>src/html/public/icons</code> directory, add pages in the <code>src/html/public/pages</code> directory, store images in the <code>src/html/public/images</code> directory. Add custom js files in <code>src/js</code> and require them in <code>src/app.js</code>, and customize your styles in <code>src/sass/main.scss</code>.</p>
     <p>The included <code>.htaccess</code> file will handle url rewrites for pretty uri's. Modify <code>browserconfig.xml</code>, <code>favicon.ico</code>, and <code>site.webmanifest</code> as needed (or remove from project if not needed). The <code>.gitignore</code> file simply saves us from commiting unnecessary files to our repo.</p>
     <p>The <code>docker-compose.yml</code> and <code>Dockerfile</code> orchestrate our local development containers, these can be modified as needed. <code>package.json</code> is our dependency manager and allows us to install required packages using NPM or Yarn.</p>
     <p>And finally, <code>webpack.config.js</code> is our configuration file that helps us compile and build our projects css and javascript, this can also be customized and extended to your hearts content.</p>

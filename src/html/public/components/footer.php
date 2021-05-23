@@ -1,5 +1,5 @@
     <section id="footer-border" uk-scrollspy="cls: uk-animation-slide-bottom-small;repeat: infinte;delay: 200;">
-        <img src="/static/images/rocket1.svg" alt="To top" href="#html_body" uk-scroll />
+        <img src="/images/rocket1.svg" alt="To top" href="#html_body" uk-scroll />
     </section>
     <footer class="uk-container-expand uk-light uk-padding">
         <div class="uk-flex uk-flex-center uk-child-width-1-3@m" uk-grid uk-scrollspy="target:>div;cls:uk-animation-fade;delay:100;repeat:true;">
@@ -18,6 +18,6 @@
         <p class="uk-text-muted uk-text-small uk-text-center">&copy; 2006-2021 I Services, Inc.</p>
     </footer>
 </body>
-<script src="/static/js/bundle.js"></script>
+<script src="/js/bundle.js"></script>
 <script>window.dmInit();</script>
 </html>
