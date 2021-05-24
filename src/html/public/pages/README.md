@@ -1,8 +1,3 @@
-<p align="center">
-  <a href="https://iservicesinc.net">
-    <img alt="I Services" src="./src/html/public/images/logo.svg" height="42" />
-  </a>
-</p>
 <h1 align="center">
   I Services PHP/Webpack Boiler
 </h1>

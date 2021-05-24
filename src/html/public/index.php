@@ -10,6 +10,19 @@
  * https://iservicesinc.com https://iservicesinc.net
  * Copyright 2021 I Services, Inc. All rights reserved.
 */
+if (file_exists('../vendor/autoload.php')) 
+    require_once('../vendor/autoload.php');
+
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+
+$log = new Logger('visits');
+$log->pushHandler(new StreamHandler('visits.log', Logger::INFO));
+$visit = array($_SERVER['REMOTE_ADDR'], $_SERVER['HTTP_USER_AGENT']);
+$log->info('new visit from', $visit);
+$Parsedown = new Parsedown();
+
+
 // Define base directory for project root
 define('BASE_DIR', dirname(__FILE__));
 

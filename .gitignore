@@ -1,7 +1,12 @@
 # Node
 node_modules
 
+# Composer
+src/html/composer*
+src/html/vendor/*
+
 # Compiled code
 dist
-src/html/static/css/styles.*
-src/html/static/js/bundle.*
+*.log
+src/html/public/css/styles.*
+src/html/public/js/bundle.*

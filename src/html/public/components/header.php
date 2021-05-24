@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/css/bundle.css">
 </head>
 <body id="main" class="no-js">
-    <header>
+    <header uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
         <nav class="uk-navbar-container uk-box-shadow-small" uk-navbar="mode: click">
             <div class="uk-navbar-left" uk-scrollspy="cls:uk-animation-fade;delay:500;">
                 <ul class="uk-navbar-nav">
