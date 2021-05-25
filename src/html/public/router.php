@@ -14,13 +14,13 @@ $request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
 switch ($request_uri[0]) {
     // Home page
     case '/':
-        $page = BASE_DIR.'/pages/home.php';
+        $page = BASE_DIR.'/pages/home.html';
         $title = "I Services, Inc.";
         break;
     // Everything else
     default:
         header('HTTP/1.0 404 Not Found');
-        $page = BASE_DIR.'/pages/404.php';
+        $page = BASE_DIR.'/pages/404.html';
         break;
 }
 ?>
