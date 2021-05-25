@@ -8,5 +8,5 @@ src/html/vendor/*
 # Compiled code
 dist
 *.log
-src/html/public/css/styles.*
+src/html/public/css/bundle.*
 src/html/public/js/bundle.*
