@@ -40,5 +40,5 @@ include(BASE_DIR.'/components/header.php');
 <?php require $page; ?>
 </main>
 <?php
-include(BASE_DIR.'/components/footer.php');
+include(BASE_DIR.'/components/footer.html');
 ?>
