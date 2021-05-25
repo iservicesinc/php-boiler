@@ -27,9 +27,9 @@ $Parsedown = new Parsedown();
 define('BASE_DIR', dirname(__FILE__));
 
 // Default site meta
-$title = "I Services PHP Framework";
-$description = "A simple PHP framework with routing and Sass compiler using NPM and Docker for local development server.";
-$keywords = "iservices, php, framework, routing, sass, npm, docker";
+$title = "I Services PHP Boilerplate";
+$description = "A simple PHP boilerplate with routing and Sass compiler using NPM and Docker for local development server.";
+$keywords = "iservices, php, boilerplate, routing, sass, npm, docker";
 $author = "@iservicesinc";
 
 require_once(BASE_DIR.'/router.php');

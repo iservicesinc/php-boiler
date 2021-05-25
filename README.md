@@ -7,6 +7,14 @@
   I Services PHP/Webpack Boiler
 </h1>
 
+## Why?
+
+Because we don't believe you should use a framework for every project! We find frameworks like Laravel very useful for large applications however they introduce complexity and bloat to most common applications. This boilerplate allows us to rapidly develop PHP applications with just the features we need, and nothing more!
+
+## What is it?
+
+Essentially, this project is a wrapper or skeleton of our own sites development process. We have webpack installed with a sass compiler, and composer to manage our PHP dependencies. We built a simple routing system that can easily be extended if needed and included some sample content to get you started.
+
 ## Description
 
 A very simple PHP/Webpack boilerplate to create web applications with routing and a Sass compiler. Default node packages include `sass`, `uikit`, and `webpack`. Easily add aditional modules, or extend your application with `composer`.
