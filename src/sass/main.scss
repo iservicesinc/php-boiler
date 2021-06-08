@@ -124,8 +124,8 @@ span[uk-icon='icon: receiver;']:hover {
 body.dark-mode {
     background-color: $dark !important;
     color: $white !important;
-    .uk-card, .uk-card-default, .uk-tile, .uk-tile-default {
-        background-color: $dark !important;
+    .uk-card, .uk-card-default, .uk-tile, .uk-tile-default, pre {
+        background-color: $black !important;
         color: $white !important;
     }
     *:not(strong, .uk-offcanvas-bar .uk-nav-primary > li > a) {
