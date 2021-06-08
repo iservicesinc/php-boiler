@@ -52,17 +52,14 @@ $base-heading-font-weight: 600;
     outline: none;
 }
 
-.uk-navbar-container:not(.uk-navbar-transparent) img {
-    filter: brightness(.8) contrast(1.2);
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    img {
+        filter: brightness(.8) contrast(1.2);
+    }
 }
 
 .uk-navbar-nav > li > a{
     color: $blue;
-}
-
-.uk-offcanvas-bar {
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
 }
 
 .uk-card {
@@ -88,44 +85,6 @@ strong {
 footer {
     background-color: $black;
     border-top: solid $red 8px;
-    border-top-left-radius: 15%;
-    border-top-right-radius: 15%;
-}
-
-body.dark-mode {
-    background-color: $dark !important;
-    color: $white !important;
-    .uk-card, .uk-card-default, .uk-tile, .uk-tile-default {
-        background-color: $dark !important;
-        color: $white !important;
-    }
-    .uk-navbar-container:not(.uk-navbar-transparent) img {
-        filter: none;
-    }
-    *:not(strong, .uk-offcanvas-bar .uk-nav-primary > li > a) {
-        color: $white !important;
-    }
-    h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6,
-    .uk-heading-small, .uk-heading-medium, .uk-heading-large, .uk-heading-xlarge,
-    .uk-heading-2xlarge, .uk-card-title, .uk-accordion-title, .uk-text-lead {
-        color: $white !important;
-
-    }
-    .uk-navbar-container:not(.uk-navbar-transparent) {
-        background-color: $black;
-        color: $white !important;
-    }
-    #dark-light-mode {
-        background: url('../images/dark_mode.svg') no-repeat 0% 0/cover;
-    }
-    .uk-container {
-        :not(.uk-card, .uk-tile, .uk-offcanvas-overlay, #footer-border) > div  {
-            background-color: $dark !important;
-        }
-    }
-    footer {
-        border-top: solid $blue 8px;
-    }
 }
 
 #dark-light-mode {
@@ -160,6 +119,42 @@ span[uk-icon='icon: receiver;'] {
 
 span[uk-icon='icon: receiver;']:hover {
     transform: rotate(0deg);
+}
+
+body.dark-mode {
+    background-color: $dark !important;
+    color: $white !important;
+    .uk-card, .uk-card-default, .uk-tile, .uk-tile-default {
+        background-color: $dark !important;
+        color: $white !important;
+    }
+    *:not(strong, .uk-offcanvas-bar .uk-nav-primary > li > a) {
+        color: $white !important;
+    }
+    h1, .uk-h1, h2, .uk-h2, h3, .uk-h3, h4, .uk-h4, h5, .uk-h5, h6, .uk-h6,
+    .uk-heading-small, .uk-heading-medium, .uk-heading-large, .uk-heading-xlarge,
+    .uk-heading-2xlarge, .uk-card-title, .uk-accordion-title, .uk-text-lead {
+        color: $white !important;
+
+    }
+    .uk-navbar-container:not(.uk-navbar-transparent) {
+        background-color: $black;
+        color: $white !important;
+        img {
+            filter: none;
+        }
+    }
+    #dark-light-mode {
+        background: url('../images/dark_mode.svg') no-repeat 0% 0/cover;
+    }
+    .uk-container {
+        :not(.uk-card, .uk-tile, .uk-offcanvas-overlay, #footer-border) > div  {
+            background-color: $dark !important;
+        }
+    }
+    footer {
+        border-top: solid $blue 8px;
+    }
 }
 
 @keyframes rocketBg {

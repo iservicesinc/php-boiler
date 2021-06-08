@@ -1,8 +1,10 @@
 # Node
+package-lock.json
 node_modules
 
 # Composer
-src/html/composer*
+src/html/composer
+src/html/composer.lock
 src/html/vendor/*
 
 # Compiled code
