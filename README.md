@@ -77,23 +77,23 @@ Please report any bugs or issues at https://github.com/iservicesinc/is-framework
 1.  **Start developing.**
 
     Clone the repo (or fetch/pull changes) and install dependencies.
+
     ```shell
     git clone git@github.com:iservicesinc/is-framework-php.git
     cd www
     ```
-    **or**
-    ```shell
-    cd <project_path>
-    git fetch && git pull
-    ```
+
     **then**
+
     ```shell
     npm install # installs webpack and sass
     npm run add-composer # installs composer to src/html
+    npm run composer-require # install new package and add to composer.json
+    npm run composer # installs/updates packages from composer.json
     npm run sass # Compiles sass to src/html/public/css/bundle.css
     npm run webpack # Compiles js to src/html/public/js/bundle.js
     npm run compile # Compiles sass and js bundles
-    npm run clean # Removes all compiled and build files
+    npm run clean # Removes all compiled files and the ./dist directory
     ```
 
     Start up local development environment in docker.
@@ -111,5 +111,5 @@ Please report any bugs or issues at https://github.com/iservicesinc/is-framework
     Once you completed making changes go ahead and compile the site.
     
     ```shell
-    npm run build # builds final site in /dist directory
+    npm run build # builds final site in ./dist directory
     ```

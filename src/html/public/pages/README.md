@@ -85,6 +85,8 @@ Please report any bugs or issues at https://github.com/iservicesinc/is-framework
     ```shell
     npm install # installs webpack and sass
     npm run add-composer # installs composer to src/html
+    npm run composer-require # install new package and add to composer.json
+    npm run composer # installs/updates packages from composer.json
     npm run sass # Compiles sass to src/html/public/css/bundle.css
     npm run webpack # Compiles js to src/html/public/js/bundle.js
     npm run compile # Compiles sass and js bundles
