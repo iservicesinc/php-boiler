@@ -9,7 +9,7 @@
 </div>
 <div class="uk-container uk-container-xsmall uk-margin-large-top">
     <?php
-    $md = file_get_contents('./pages/README.md');
+    $md = file_get_contents(BASE_DIR . '/pages/README.md');
     echo $Parsedown->text($md);
     ?>
     <h3>Download</h3>

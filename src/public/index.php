@@ -24,7 +24,7 @@ $Parsedown = new Parsedown();
 
 
 // Define base directory for project root
-define('BASE_DIR', dirname(__FILE__));
+define('BASE_DIR', dirname(dirname(__FILE__)));
 
 // Default site meta
 $title = "I Services PHP Boilerplate";

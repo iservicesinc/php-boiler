@@ -3,12 +3,12 @@ package-lock.json
 node_modules
 
 # Composer
-src/html/composer
-src/html/composer.lock
-src/html/vendor/*
+src/composer
+src/composer.lock
+src/vendor/*
 
 # Compiled code
 dist
 *.log
-src/html/public/css/bundle.*
-src/html/public/js/bundle.*
+src/public/css/bundle.*
+src/public/js/bundle.*

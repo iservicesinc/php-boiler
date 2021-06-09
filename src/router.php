@@ -14,7 +14,7 @@ $request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
 switch ($request_uri[0]) {
     // Home page
     case '/':
-        $page = BASE_DIR.'/pages/home.html';
+        $page = BASE_DIR.'/pages/home.php';
         $title = "I Services, Inc.";
         break;
     // Everything else

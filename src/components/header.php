@@ -8,7 +8,7 @@
     <meta name="description" content="<?php echo $description; ?>">
     <meta name="keywords" content="<?php echo $keywords; ?>">
     <meta name="author" content="<?php echo $author; ?>">
-    <?php include_once(BASE_DIR.'/icons/favicons.html'); ?>
+    <?php include_once(BASE_DIR.'/public/icons/favicons.html'); ?>
     <link rel="stylesheet" href="/css/bundle.css">
 </head>
 <body id="main" class="no-js">

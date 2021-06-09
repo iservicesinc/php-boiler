@@ -31,39 +31,28 @@ A very simple PHP/Webpack boilerplate to create web applications with routing an
 * .docker
 * node_modules
 * src
-  * html
-    * public
-      * components
-      * icons
-      * pages
-      * static
-      * .htaccess
-      * browserconfig.xml
-      * favicon.ico
-      * index.php
-      * router.php
-      * site.webmanifest
-    * vendor
-    * getComposer.php
+  * components
+  * pages
+  * public
+  * router.php
   * js
-    * darkMode.js
   * sass
-    * main.scss
   * app.js
 * .gitignore
 * docker-compose.yml
 * Dockerfile
+* getComposer.php
 * package.json
 * README.md
 * webpack.config.js
 
 Starting from the top, the `.docker` directory stores our virtual host file for our docker instance, this should not require any modifications but, can be extended and modified to fit your project. The `node_modules` directory is where NPM stores our dev dependencies such as webpack and sass.
 
-The `src` folder is where all the magic happens! Create components to include/require throughout your project in the `src/html/public/components` directory, place your sites icons in the `src/html/public/icons` directory, add pages in the `src/html/public/pages` directory, store images in the `src/html/public/static/images` directory. Add custom js files in `src/js` and require them in `src/app.js`, and customize your styles in `src/sass/main.scss`.
+The `src` folder is where all the magic happens! Create components to include/require throughout your project in the `src/components` directory, add pages in the `src/pages` directory, store images in the `src/public/images` directory. Add custom js files in `src/js` and require them in `src/app.js`, and customize your styles in `src/sass/main.scss`.
 
-The included `.htaccess` file will handle url rewrites for pretty uri's. Modify `browserconfig.xml`, `favicon.ico`, and `site.webmanifest` as needed (or remove from project if not needed). The `.gitignore` file simply saves us from commiting unnecessary files to our repo.
+The included `.htaccess` file will handle url rewrites for pretty uri's. Modify `browserconfig.xml`, and `site.webmanifest` as needed (or remove from project if not needed). The `.gitignore` file simply saves us from commiting unnecessary files to our repo.
 
-The `docker-compose.yml` and `Dockerfile` orchestrate our local development containers, these can be modified as needed. `package.json` is our dependency manager and allows us to install required packages using NPM or Yarn. Optionally, 
+The `docker-compose.yml` and `Dockerfile` orchestrate our local development containers, these can be modified as needed. `package.json` is our dependency manager and allows us to install required packages using NPM or Yarn. And composer can be easily added to the project to manage php packages with `npm run add-composer` to install it, then `npm run composer-require <package/name>` to add new packages, or `npm run composer` to update packages from existing composer.json  file.
 
 And finally, `webpack.config.js` is our configuration file that helps us compile and build our projects css and javascript, this can also be customized and extended to your hearts content.
 
