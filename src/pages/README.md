@@ -55,7 +55,7 @@ And finally, `webpack.config.js` is our configuration file that helps us compile
 
 ## Issues
 
-Please report any bugs or issues at https://github.com/iservicesinc/is-framework-php/issues.
+Please report any bugs or issues at https://github.com/iservicesinc/php-boiler/issues.
 
 
 ## 🚀 Quick start
@@ -64,8 +64,8 @@ Please report any bugs or issues at https://github.com/iservicesinc/is-framework
     Clone the repo (or fetch/pull changes) and install dependencies.
 
     ```shell
-    git clone git@github.com:iservicesinc/is-framework-php.git
-    cd www
+    git clone git@github.com:iservicesinc/php-boiler.git
+    cd php-boiler
     ```
 
     **then**

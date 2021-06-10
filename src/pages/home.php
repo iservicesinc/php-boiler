@@ -14,6 +14,6 @@
     ?>
     <h3>Download</h3>
     <ul class="uk-list">
-        <li><a href="https://github.com/iservicesinc/is-framework-php" class="uk-button uk-button-default" rel="nofollow norefferer noopener">Download from Github <span uk-icon="github"></span></a></li>
+        <li><a href="https://github.com/iservicesinc/php-boiler" class="uk-button uk-button-default" rel="nofollow norefferer noopener" target="_blank">Download from Github <span uk-icon="github"></span></a></li>
     </ul>
 </div>
