@@ -11,8 +11,7 @@
   },
   "scripts": {
     "add-composer": "php ./getComposer.php && php ./composer-setup.php --install-dir=./src --filename=composer && rm ./composer-setup.php",
-    "composer": "cd ./src && ./composer update",
-    "composer-require": "cd ./src && ./composer require",
+    "composer": "cd ./src && ./composer",
     "sass": "./node_modules/.bin/sass ./src/sass/main.scss ./src/public/css/bundle.css",
     "webpack": "npx webpack",
     "compile": "npx webpack && npm run sass",
