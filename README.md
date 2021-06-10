@@ -17,7 +17,7 @@ Essentially, this project is a wrapper or skeleton of our own sites development 
 
 ## Description
 
-A very simple PHP/Webpack boilerplate to create web applications with routing and a Sass compiler. Default node packages include `sass`, `uikit`, and `webpack`. Easily add aditional modules, or extend your application with `composer`. `Docker` development environment included for previewing/testing purposes.
+A very simple PHP/Webpack boilerplate to create web applications with routing and a Sass compiler. Default node packages include `sass`, `uikit`, and `webpack`. Easily add additional modules, or extend your application with `composer`. `Docker` development environment included for previewing/testing purposes.
 
 ## Requirements
 
