@@ -13,17 +13,17 @@ Because we don't believe you should use a framework for every project! We find f
 
 ## What is it?
 
-Essentially, this project is a wrapper or skeleton of our own sites development process. We have webpack installed with a sass compiler, and composer to manage our PHP dependencies. We built a simple routing system that can easily be extended if needed and included some sample content to get you started.
+Essentially, this project is a wrapper or skeleton of our own sites development process with the most minimal dependencies. We have webpack installed with a sass compiler, and composer to manage our PHP dependencies. We built a simple routing system that can easily be extended if needed and included some sample content to get you started.
 
 ## Description
 
-A very simple PHP/Webpack boilerplate to create web applications with routing and a Sass compiler. Default node packages include `sass`, `uikit`, and `webpack`. Easily add aditional modules, or extend your application with `composer`.
+A very simple PHP/Webpack boilerplate to create web applications with routing and a Sass compiler. Default node packages include `sass`, `uikit`, and `webpack`. Easily add aditional modules, or extend your application with `composer`. `Docker` development environment included for previewing/testing purposes.
 
 ## Requirements
 
 * Docker (required for local development server)
 * Node (required for Webpack and Sass compiler)
-* PHP (required for composer)
+* PHP (only required if using composer)
 
 ## Structure
 
@@ -77,8 +77,7 @@ Please report any bugs or issues at https://github.com/iservicesinc/is-framework
     ```shell
     npm install # installs webpack and sass
     npm run add-composer # installs composer to src/html
-    npm run composer-require # install new package and add to composer.json
-    npm run composer # installs/updates packages from composer.json
+    npm run composer # run composer commands
     npm run sass # Compiles sass to src/html/public/css/bundle.css
     npm run webpack # Compiles js to src/html/public/js/bundle.js
     npm run compile # Compiles sass and js bundles
