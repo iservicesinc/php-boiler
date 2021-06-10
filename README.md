@@ -75,13 +75,10 @@ Please report any bugs or issues at https://github.com/iservicesinc/is-framework
     **then**
 
     ```shell
-    npm install # installs webpack and sass
+    npm install # installs npm dependencies
     npm run add-composer # installs composer to src/html
-    npm run composer # run composer commands
-    npm run sass # Compiles sass to src/html/public/css/bundle.css
-    npm run webpack # Compiles js to src/html/public/js/bundle.js
+    npm run composer update # installs composer dependencies
     npm run compile # Compiles sass and js bundles
-    npm run clean # Removes all compiled files and the ./dist directory
     ```
 
     Start up local development environment in docker.
