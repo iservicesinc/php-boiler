@@ -1,6 +1,6 @@
 {
   "name": "is-framework-php",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "Simple PHP framework with routing and Sass compiler.",
   "private": true,
   "devDependencies": {
@@ -16,7 +16,8 @@
     "webpack": "npx webpack",
     "compile": "npx webpack && npm run sass",
     "clean": "rm -rf ./dist && rm -f ./src/public/js/bundle.* && rm -f ./src/public/css/bundle.*",
-    "server": "docker-compose up --build",
+    "server": "cd src/public && php -S localhost:8000",
+    "prod-server": "cd dist/public && php -S localhost:8080",
     "build": "npm run clean && npm run compile && cp -r ./src/ ./dist/ && rm -rf ./dist/js ./dist/sass ./dist/app.js ./dist/composer*"
   },
   "repository": {

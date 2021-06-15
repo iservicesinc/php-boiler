@@ -17,18 +17,16 @@ Essentially, this project is a wrapper or skeleton of our own sites development 
 
 ## Description
 
-A very simple PHP/Webpack boilerplate to create web applications with routing and a Sass compiler. Default node packages include `sass`, `uikit`, and `webpack`. Easily add additional modules, or extend your application with `composer`. `Docker` development environment included for previewing/testing purposes.
+A very simple PHP/Webpack boilerplate to create web applications with routing and a Sass compiler. Default node packages include `sass`, `uikit`, and `webpack`. Easily add additional modules, or extend your application with `composer`.
 
 ## Requirements
 
-* Docker (required for local development server)
 * Node (required for Webpack and Sass compiler)
 * PHP (only required if using composer)
 
 ## Structure
 
 * .
-* .docker
 * node_modules
 * src
   * components
@@ -39,20 +37,18 @@ A very simple PHP/Webpack boilerplate to create web applications with routing an
   * sass
   * app.js
 * .gitignore
-* docker-compose.yml
-* Dockerfile
 * getComposer.php
 * package.json
 * README.md
 * webpack.config.js
 
-Starting from the top, the `.docker` directory stores our virtual host file for our docker instance, this should not require any modifications but, can be extended and modified to fit your project. The `node_modules` directory is where NPM stores our dev dependencies such as webpack and sass.
+Starting from the top, the `node_modules` directory is where NPM stores our dev dependencies such as webpack and sass.
 
 The `src` folder is where all the magic happens! Create components to include/require throughout your project in the `src/components` directory, add pages in the `src/pages` directory, store images in the `src/public/images` directory. Add custom js files in `src/js` and require them in `src/app.js`, and customize your styles in `src/sass/main.scss`.
 
 The included `.htaccess` file will handle url rewrites for pretty uri's. Modify `browserconfig.xml`, and `site.webmanifest` as needed (or remove from project if not needed). The `.gitignore` file simply saves us from commiting unnecessary files to our repo.
 
-The `docker-compose.yml` and `Dockerfile` orchestrate our local development containers, these can be modified as needed. `package.json` is our dependency manager and allows us to install required packages using NPM or Yarn. And composer can be easily added to the project to manage php packages with `npm run add-composer` to install it, then `npm run composer-require <package/name>` to add new packages, or `npm run composer` to update packages from existing composer.json  file.
+The `package.json` is our dependency manager and allows us to install required packages using NPM or Yarn. And composer can be easily added to the project to manage php packages with `npm run add-composer` to install it, then `npm run composer-require <package/name>` to add new packages, or `npm run composer` to update packages from existing composer.json  file.
 
 And finally, `webpack.config.js` is our configuration file that helps us compile and build our projects css and javascript, this can also be customized and extended to your hearts content.
 
@@ -98,3 +94,11 @@ Please report any bugs or issues at https://github.com/iservicesinc/php-boiler/i
     ```shell
     npm run build # builds final site in ./dist directory
     ```
+
+    then test the compiled version.
+
+    ```shell
+    npm run prod-server
+    ```
+
+    Your prodction site is now running at `http://localhost:8080`!
