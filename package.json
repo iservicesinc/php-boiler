@@ -10,7 +10,7 @@
     "webpack-cli": "^4.7.2"
   },
   "scripts": {
-    "add-composer": "php ./getComposer.php && mv ./composer ./src/",
+    "add-composer": "php ./bin/getComposer.php && mv ./composer ./src/",
     "composer": "cd ./src && ./composer",
     "sass": "./node_modules/.bin/sass ./src/sass/main.scss ./src/public/css/bundle.css",
     "webpack": "npx webpack",
