@@ -18,9 +18,9 @@ if (hash_file('sha384', 'composer-setup.php') === $checksum) {
     $opt = isset($argv[1]) ? $argv[1] : null;
     if ($opt == null) exec('php composer-setup.php --filename=composer');
     if ($opt == '--global') exec('php composer-setup.php --filename=composer --install-dir=/usr/bin');
-    exec('rm composer-setup.php');
 } else {
     echo 'Installer corrupt';
 }
+exec('rm composer-setup.php');
 echo PHP_EOL;
 ?>
