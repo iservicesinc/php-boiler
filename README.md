@@ -101,4 +101,4 @@ Please report any bugs or issues at https://github.com/iservicesinc/php-boiler/i
     npm run prod-server
     ```
 
-    Your prodction site is now running at `http://localhost:8080`!
+    Your production site is now running at `http://localhost:8080`!
